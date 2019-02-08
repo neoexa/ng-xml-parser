@@ -6,7 +6,7 @@ import { ProjectSymbols } from 'ngast';
 import { resourceResolver } from './utils/resource';
 import { ModuleTree } from './utils/module-tree';
 
-export function ngcounter() {
+export function ngparser() {
   const error = message => {
     console.error(chalk.default.bgRed.white(message));
     };

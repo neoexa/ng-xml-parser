@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-
-let path = require('path')
-
-require(path.join(__dirname, '..', 'counter')).ngcounter();

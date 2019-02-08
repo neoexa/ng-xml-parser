@@ -1,27 +1,28 @@
 {
-  "name": "ng-app-counter",
-  "version": "0.0.2",
-  "description": "Counter Angular project",
+  "name": "ng-xml-parser",
+  "version": "0.0.1",
+  "description": "Angular to XML Parser",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamaks/ng-app-counter.git"
+    "url": "https://github.com/neoexa/ng-xml-parser.git"
   },
   "keywords": [
     "angular",
-    "counter",
-    "ng"
+    "architecture",
+    "xml",
+    "parser"
   ],
-  "author": "Jamaks",
-  "license": "MIT",
-  "bin": "./bin/ng-app-counter",
+  "author": "Acelys",
+  "license": "ICS",
+  "bin": "./bin/ng-xml-parser",
   "bugs": {
-    "url": "https://github.com/jamaks/ng-app-counter/issues"
+    "url": "https://github.com/neoexa/ng-xml-parser/issues"
   },
-  "homepage": "https://github.com/jamaks/ng-app-counter#readme",
+  "homepage": "https://github.com/neoexa/ng-xml-parser#readme",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "postbuild": "copy bin dist && copy package.json dist && copy README.md dist && copy LICENSE dist",
+    "postbuild": "copy bin dist && copy package.json dist && copy README.md dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
