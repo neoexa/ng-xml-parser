@@ -6,7 +6,7 @@ const fs_1 = require("fs");
 const ngast_1 = require("ngast");
 const resource_1 = require("./utils/resource");
 const module_tree_1 = require("./utils/module-tree");
-function ngparser() {
+function ngcounter() {
     const error = message => {
         console.error(chalk.default.bgRed.white(message));
     };
@@ -19,12 +19,6 @@ function ngparser() {
     if (!projectPath) {
         projectPath = './tsconfig.json';
     }
-    //   if (typeof projectPath !== 'string') {
-    //     error(
-    //       'Specify the path to the root "tsconfig" file of your project with the "-p" flag'
-    //     );
-    //     process.exit(1);
-    //   }
     if (!fs_1.existsSync(projectPath)) {
         error('Cannot find tsconfig at "' + projectPath + '".');
         process.exit(1);
@@ -94,5 +88,5 @@ function ngparser() {
         error(parseError);
     }
 }
-exports.ngparser = ngparser;
-//# sourceMappingURL=parser.js.map
+exports.ngcounter = ngcounter;
+//# sourceMappingURL=counter.js.map

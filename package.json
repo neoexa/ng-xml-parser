@@ -2,6 +2,7 @@
   "name": "ng-xml-parser",
   "version": "0.0.3",
   "description": "Angular to XML Parser",
+  "main": "dist/counter.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/neoexa/ng-xml-parser.git"
