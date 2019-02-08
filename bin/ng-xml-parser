@@ -2,4 +2,4 @@
 
 let path = require('path')
 
-require(path.join(__dirname, '..', 'parser')).ngparser();
+require(path.join(__dirname, '..', 'counter')).ngcounter();

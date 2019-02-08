@@ -6,7 +6,7 @@ import { ProjectSymbols } from 'ngast';
 import { resourceResolver } from './utils/resource';
 import { ModuleTree } from './utils/module-tree';
 
-export function ngparser() {
+export function ngcounter() {
   const error = message => {
     console.error(chalk.default.bgRed.white(message));
     };
@@ -21,12 +21,7 @@ export function ngparser() {
   if (!projectPath) {
     projectPath = './tsconfig.json';
   }
-//   if (typeof projectPath !== 'string') {
-//     error(
-//       'Specify the path to the root "tsconfig" file of your project with the "-p" flag'
-//     );
-//     process.exit(1);
-//   }
+  
   if (!existsSync(projectPath)) {
     error('Cannot find tsconfig at "' + projectPath + '".');
     process.exit(1);
